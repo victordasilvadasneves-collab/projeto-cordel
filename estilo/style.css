@@ -1,0 +1,104 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&family=UnifrakturMaguntia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Betania+Patmos+In&family=Passion+One:wght@400;700;900&family=UnifrakturMaguntia&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Embed code', cursive;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 3.5vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+    color: black;
+}
+
+section.normal {
+    background-color: white;
+    color: rgba(0, 0, 0, 0.489);
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: #ffffff;
+    box-shadow: inset 6px 6px 13px 0px black; 
+    background-attachment: fixed;  
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.506);
+    color: white;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right;
+    background-size: cover;
+    
+}
+
+#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-position: right;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
